@@ -1,0 +1,99 @@
+.cost {
+  padding-top: 97px;
+  padding-bottom: 82px;
+  background: linear-gradient(0deg, rgba(211, 169, 80, 0.2) 0%, rgba(211, 169, 80, 0.2) 41.68%, rgba(211, 169, 80, 0) 86.98%);
+  //opacity: 0.5;
+  //transform: rotate(90deg);
+
+  @include respond-to(sm){
+    padding-top: 82px;
+  }
+.cost-container{
+  max-width: 1248px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include respond-to(xl){
+    max-width: 1024px;
+  }
+  @include respond-to(lg){
+    max-width: 672px;
+  }
+  @include respond-to(md){
+    max-width: 550px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+  .cost__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 74px;
+  }
+
+  .cost-cards, .cost-cards-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .cost-card {
+    @include respond-to(xl){
+      margin-bottom: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include respond-to(lg){
+      max-width: 672px;
+    }
+    @include respond-to(sm){
+      //margin-bottom: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+&:last-child{
+  margin-bottom: 0;
+}
+  }
+
+  .cost-card__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    padding: 33px 1rem 30px;
+    background: #FCF9F2;
+    box-shadow: 30px 54px 64px rgba(211, 169, 80, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    min-height: 238px;
+    margin-bottom: 20px;
+
+    .cost-card__title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      color: #D3A950;
+      margin-bottom: 16px;
+    }
+
+    .cost-card__price {
+      font-size: 36px;
+      line-height: 51px;
+      color: #000000;
+      margin-bottom: 24px;
+    }
+
+    .cost-card__hours {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      color: #8F939E;
+    }
+  }
+
+  .cost-card__btn {
+    width: 280px;
+  }
+}

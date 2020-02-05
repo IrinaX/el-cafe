@@ -1,0 +1,47 @@
+@import "../variables";
+
+.breadcrumbs {
+  font-size: 14px;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  white-space: nowrap;
+  overflow: auto;
+  @include respond-to(md){
+    padding-top: 15px;
+  }
+
+  > li {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #C3C3C3;
+    text-decoration: none;
+    padding: 0 15px;
+    //border-right: 1px solid #c3c3c3;
+
+    a {
+      color: inherit;
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+
+      &:after {
+        content: ">";
+        vertical-align: middle;
+        margin-top: -5px;
+        display: inline-block;
+        padding-left: 10px;
+        margin-right: -15px;
+      }
+    }
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.gallery{
+  padding-top: 114px;
+  @include respond-to(lg){
+    padding-top: 50px;
+  }
+}
+.gallery-content{
+  max-width: 1440px;
+}
+.gallery__img{
+  display: block;
+
+  @include respond-to(xl){
+    margin-bottom: 30px;
+  }
+  @include respond-to(sm){
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

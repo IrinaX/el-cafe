@@ -1,0 +1,109 @@
+.premium-product {
+  background: url(../images/сup-of-coffee.png) bottom right no-repeat, #C5B3A4;
+  padding-top: 115px;
+  padding-bottom: 24px;
+  @include respond-to(xl) {
+    background-size: 50%;
+    background-position-y: 8%;
+    background-position-x: 104%;
+  }
+
+  @include respond-to(lg) {
+    background-size: 73%;
+    background-position-y: 8%;
+    background-position-x: 103%;
+    background: linear-gradient(to left, #c5b3a3b8, #c5b3a3f2),
+    url(../images/сup-of-coffee.png) bottom right no-repeat, #C5B3A4;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  @include respond-to(md) {
+    background-size: contain;
+    background-position-y: 38%;
+
+  }
+
+  .premium-product__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 28px;
+
+    span {
+      font-family: SignPainter, sans-serif;
+      text-transform: none;
+      color: #EA1D19;
+      display: block;
+      margin-bottom: 13px;
+    }
+  }
+
+  .premium-product__text {
+    margin-bottom: 75px;
+    font-size: 18px;
+    line-height: 27px;
+
+    p {
+      margin-bottom: 28px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include respond-to(sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .premium-product__attention {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 65px;
+
+    @include respond-to(sm) {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
+    .premium-product__attention-img {
+      margin-right: 21px;
+      @include respond-to(sm) {
+        margin: 0 0 20px 0;
+      }
+    }
+
+    .premium-product__attention-text {
+      letter-spacing: -0.1px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #C08E88;
+      @include respond-to(lg) {
+        color: #fff;
+      }
+      @include respond-to(sm) {
+        font-size: 21px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .premium-product__btn-small-wrap {
+    text-align: right;
+    max-width: 1440px;
+    padding: 0 24px;
+    margin: 0 auto;
+    @include respond-to(sm) {
+      text-align: center;
+    }
+  }
+
+  .premium-product__btn-small {
+    position: relative;
+
+  }
+}

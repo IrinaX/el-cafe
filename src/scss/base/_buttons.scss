@@ -1,0 +1,75 @@
+@import "../variables";
+
+.btn {
+
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+  //letter-spacing: 0.6px;
+  line-height: 28px;
+  padding: 5px 20px;
+  //background: #FFFFFF;
+  border: none;
+  box-sizing: border-box;
+  //box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 29px;
+  outline: none !important;
+  //transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+
+  &:hover {
+    //transform: translateY(-4px);
+    //box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+    //text-decoration: none;
+  }
+
+  &.btn_primary,&.btn_secondary {
+    padding: 20px 52px 16px;
+    font-size: 20px;
+    line-height: 28px;
+    background: #EA1D19;
+    color: #FFFFFF;
+
+    @include respond-to(sm){
+      padding: 20px 30px 16px;
+    }
+  }
+  &.btn_secondary{
+    background: #F2C94C;
+    color: #212126;
+    font-weight: normal;
+  }
+  &.btn_sm{
+  padding: 13px 41px 9px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+  &.btn_dark {
+
+  }
+
+  &.btn_info {
+    background: linear-gradient(180deg, lighten($info, 10%) 0%, $info 100%);
+    color: white;
+  }
+
+  &.btn_light {
+
+  }
+
+  &.btn_link {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+
+}
+.btn-play {
+  background: url(../images/icon-play.svg);
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+  border: none;
+}

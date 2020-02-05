@@ -1,0 +1,22 @@
+.free-consultation {
+  background: url(../images/coffee-beans-left.png) bottom left no-repeat,
+  url(../images/coffee-beans-right.png) top right no-repeat,
+  linear-gradient(90deg, #C08E88 -2.51%, #D3A950 100%);
+  padding-top: 80px;
+  padding-bottom: 72px;
+
+  .free-consultation__title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 130%;
+    color: #FFFFFF;
+
+    span {
+      color: #86EFC0;
+    }
+
+    @include respond-to(sm) {
+      font-size: 38px;
+    }
+  }
+}

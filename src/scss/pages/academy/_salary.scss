@@ -1,0 +1,63 @@
+.salary{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 84px;
+  padding-bottom: 92px;
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #158B91 44%, rgba(21, 139, 145, 0) 102.36%), url(../images/salary.jpg) left no-repeat;
+    background-size: contain;
+    @include respond-to(lg){
+      transform: scale(-1, 1);
+      background: linear-gradient(270deg, rgba(21,139,145,1) 35%, rgba(21, 139, 145, 0) 133.36%), url(../images/salary.jpg) -100px no-repeat;
+      background-size: cover;
+    }
+    @include respond-to(md){
+      transform: scale(-1, 1);
+      background: linear-gradient(270deg, rgba(21,139,145,1) 13%, rgba(21, 139, 145, 0) 133.36%), url(../images/salary.jpg) -100px no-repeat;
+      background-size: cover;
+    }
+    @include respond-to(sm){
+      transform: scale(1, 1);
+      background: linear-gradient(rgba(21,139,145,0.78),rgba(21,139,145,0.78)), url(../images/salary.jpg) center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .salary__content-title{
+    max-width: 500px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 31px;
+    @include respond-to(sm){
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+
+  .salary__content-btn{
+    padding-left: 108px;
+    padding-right: 108px;
+    @include respond-to(md){
+      padding-left: 52px;
+      padding-right:  52px;
+    }
+    @include respond-to(sm){
+      max-width: 350px;
+      padding-left: 32px;
+      padding-right: 32px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  background: #EA1D19;
+
+  .footer__content {
+    max-width: 1248px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer__logo {
+    margin-bottom: 8px;
+  }
+
+  .footer__logo-wrap {
+text-align: left;
+    @include respond-to(lg){
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer__title {
+    font-family: SignPainter, sans-serif;
+    font-weight: 600;
+    font-size: 58.4526px;
+    line-height: 58px;
+    color: #D3A950;
+    transform: rotate(-3deg);
+  }
+
+
+  .footer__tel-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond-to(lg){
+
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer__tel-link {
+    font-weight: bold;
+    font-size: 30.6773px;
+    line-height: 43px;
+    text-align: center;
+    color: #F2C94C;
+@include respond-to(sm){
+  font-size: 25.6773px;
+}
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.7;
+    }
+  }
+.footer__social-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @include respond-to(lg){
+    justify-content: center;
+  }
+}
+  .footer__social {
+    font-size: 46.016px;
+    line-height: 53px;
+    font-weight: normal;
+    @include respond-to(lg){
+      margin-bottom: 30px;
+    }
+
+    .footer__social-link {
+      margin-right: 52px;
+      @include respond-to(sm){
+        margin-right: 40px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .fab {
+      color: #ECF0FB;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .footer__term {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+    a {
+      color: #4ADB9A;
+      @include respond-to(sm){
+        display: block;
+      }
+    }
+  }
+}

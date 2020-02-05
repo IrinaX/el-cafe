@@ -1,0 +1,90 @@
+.helpful-info {
+  background: rgb(203, 208, 216, 0.5);
+  padding-top: 96px;
+  padding-bottom: 104px;
+  @include respond-to(lg){
+    padding-top: 66px;
+    padding-bottom: 80px;
+  }
+  @include respond-to(sm){
+    padding-bottom: 48px;
+  }
+
+  .helpful-info__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    @include respond-to(lg){
+      margin-bottom: 36px;
+    }
+  }
+
+  .helpful-info__content {
+    margin-bottom: 85px;
+    @include respond-to(sm){
+      margin-bottom: 48px;
+    }
+  }
+
+  .video-block {
+    width: 384px;
+
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .video-block__btn-play {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(252, 250, 244, .2);
+    }
+
+    .video-block__preview {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+
+
+    @include respond-to(sm) {
+      height: auto;
+      max-width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .helpful-info__btn {
+    &.btn_primary {
+      padding: 9px 64px 8px;
+      @include respond-to(sm) {
+        padding: 9px 20px 8px;
+      }
+    }
+.fa-youtube{
+
+  font-weight: normal;
+  font-size: 38.2609px;
+  line-height: 44px;
+  vertical-align: middle;
+  margin-left: 21px;
+  @include respond-to(sm) {
+    margin-left: 10px;
+  }
+}
+
+  }
+}

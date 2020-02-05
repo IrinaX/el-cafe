@@ -1,0 +1,78 @@
+@import "../variables";
+
+body {
+  font: $base-font;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-weight: bold;
+}
+
+h1, .h1 {
+  font: $h1-font;
+  margin-bottom: $h1-margin-bottom;
+}
+
+h2, .h2 {
+  font: $h2-font;
+  margin-bottom: $h2-margin-bottom;
+}
+
+h3, .h3 {
+  font: $h3-font;
+  margin-bottom: $h3-margin-bottom;
+}
+
+h4, .h4 {
+  font: $h4-font;
+  margin-bottom: $h4-margin-bottom;
+}
+
+h5, .h5 {
+  font: $h5-font;
+  margin-bottom: $h5-margin-bottom;
+}
+
+@include respond-to(sm) {
+  //body{
+  //  font-size: 14px;
+  //}
+
+  h1, .h1 {
+    font: $h1-font-sm;
+  }
+
+  h2, .h2 {
+    font: $h2-font-sm;
+  }
+
+  h3, .h3 {
+    font: $h3-font-sm;
+  }
+
+  h4, .h4 {
+    font: $h4-font-sm;
+  }
+
+  h5, .h5 {
+    font: $h5-font-sm;
+  }
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+p, .list-styled {
+  a {
+    border-bottom: 1px dashed orange;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

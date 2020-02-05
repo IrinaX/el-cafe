@@ -1,0 +1,16 @@
+@import "../variables";
+
+.tabs {
+  display: flex;
+  
+  .tabs__item {
+    background: $dark;
+    color: $primary;
+    border: none;
+
+    &.active {
+      background: $primary;
+      color: $dark;
+    }
+  }
+}

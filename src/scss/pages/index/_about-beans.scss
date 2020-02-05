@@ -1,0 +1,172 @@
+.about-beans {
+  background: url(../images/about-beans-bg-left.png) top left no-repeat,
+  url(../images/about-beans-bg-right.png) top right no-repeat,
+  linear-gradient(0deg, rgba(211, 169, 80, 0.1) 0%,
+                  rgba(211, 169, 80, 0.1) 41.68%, rgba(211, 169, 80, 0) 86.98%);
+  padding-top: 96px;
+  padding-bottom: 135px;
+  position: relative;
+  @include respond-to(xl) {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/about-beans-bg-left.png) 0% 0% no-repeat,
+    url(../images/about-beans-bg-right.png) 100% 15% no-repeat,
+    linear-gradient(0deg, rgba(211, 169, 80, 0.1) 0%,
+                    rgba(211, 169, 80, 0.1) 41.68%, rgba(211, 169, 80, 0) 86.98%);
+    padding-bottom: 0;
+  }
+  @include respond-to(sm) {
+    background-size: contain;
+    background-position-y: 0, 36%;
+    padding-top: 60px;
+  }
+
+  .about-beans__title {
+    width: 210px;
+    text-transform: uppercase;
+    color: #212126;
+    text-align: center;
+    margin: 0 auto 42px;
+  }
+
+  .about-beans__main-text {
+    font-size: 22px;
+    line-height: 33px;
+
+    strong, p {
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    @include respond-to(sm) {
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+
+  .about-beans__guarantee {
+    position: absolute;
+    right: -2%;
+    top: 66%;
+    @include respond-to(xl) {
+      position: absolute;
+      right: -10%;
+      top: 58%;
+    }
+    @include respond-to(lg) {
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin-bottom: 35px;
+    }
+    @media (max-width: 375px) {
+      width: 100%;
+    }
+  }
+
+  .about-beans__img {
+    display: block;
+    margin: 0 auto 28px;
+  }
+
+  .about-beans__secondary-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    color: #EA1D19;
+    margin-bottom: 109px;
+    @include respond-to(xl) {
+      margin-bottom: 60px;
+    }
+    @include respond-to(sm) {
+      font-size: 22px;
+      line-height: 140%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .about-beans__bg-image {
+    position: absolute;
+    bottom: -3%;
+    right: 0;
+
+    @include respond-to(xl) {
+      display: none;
+    }
+  }
+
+  .about-beans__info {
+    @include respond-to(xl) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-beans__info-img {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+      @include respond-to(xl) {
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include respond-to(md) {
+        width: 100%;
+      }
+      @include respond-to(sm) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .about-beans__info-text-wrap {
+    height: 100%;
+    max-width: 728px;
+    background: #D3A950;
+    padding: 34px 35px 35px 35px;
+
+    @include respond-to(xl) {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 35px;
+      max-width: 100%;
+    }
+    @include respond-to(sm) {
+      padding: 35px 16px;
+    }
+
+    .about-beans__info-text {
+      max-width: 589px;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 33px;
+      color: #FFFFFF;
+
+      span {
+        font-weight: 200;
+      }
+
+      p {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include respond-to(xl) {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+      @include respond-to(sm) {
+        font-size: 18px;
+      }
+    }
+
+
+  }
+}
+
