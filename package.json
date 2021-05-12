@@ -20,7 +20,7 @@
     "cross-env": "^6.0.3",
     "laravel-mix": "^5.0.0",
     "serialize-javascript": "^2.1.2",
-    "swiper": "^5.2.1"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
